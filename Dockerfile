@@ -3,7 +3,7 @@ MAINTAINER Huaming Rao <huaming.rao@gmail.com>
 
 #install global npm modules
 RUN npm install -g strongloop
-#RUN npm install -g cnpm --registry=http://registry.npm.taobao.org
+RUN npm install -g cnpm --registry=http://registry.npm.taobao.org
 RUN npm install -g gulp
 RUN npm install -g jshint
 RUN npm install -g istanbul
