@@ -9,10 +9,8 @@ RUN npm install -g jshint
 RUN npm install -g istanbul
 RUN npm install -g source-map
 
-# setup the project
 WORKDIR /app
-COPY . /app
-RUN npm install
+VOLUME /app
 
 #clean
 RUN npm cache clear
