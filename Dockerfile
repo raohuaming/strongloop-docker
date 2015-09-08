@@ -9,9 +9,6 @@ RUN npm install -g jshint
 RUN npm install -g istanbul
 RUN npm install -g source-map
 
-WORKDIR /app
-VOLUME /app
-
 #clean
 RUN npm cache clear
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
