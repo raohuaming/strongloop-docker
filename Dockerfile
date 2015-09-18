@@ -8,6 +8,7 @@ RUN npm install -g gulp
 RUN npm install -g jshint
 RUN npm install -g istanbul
 RUN npm install -g source-map
+RUN npm install -g forever
 
 #clean
 RUN npm cache clear
